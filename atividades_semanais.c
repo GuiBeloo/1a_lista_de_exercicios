@@ -23,7 +23,7 @@ void imprimirVetor(int v[], int n, int x){
         if(i != n-1) printf(",");
     }
     printf("]");
-    //x = 1: imprime metricas || x = 0: n„o imprime mÈtricas
+    //x = 1: imprime metricas || x = 0: n√£o imprime m√©tricas
     if(x == 1){
         printf("\nComparacoes: %d\nTrocas: %d\n", comparacoes, trocas);
     }
@@ -171,14 +171,14 @@ void bubble_sort(){
     printf("\n");
     printf("DISCUSSAO: O CASO QUE GEROU MENOS COMPARACOES FOI O VETOR ORDENADO COM APOS SER APLICADO O BUBBLE SORT COM EARLY STOP!\n\n");
 
-    //QUEST√O 3
+    //QUEST√ÉO 3
     float notas[50] = {8.5, 7.0, 4.5, 9.2, 3.1, 6.8, 5.5, 10.0, 2.4, 7.8, 6.0, 4.2, 8.9, 9.5, 5.0, 3.7, 7.3, 8.1, 1.5, 6.4, 9.0, 5.8, 4.9, 7.7, 8.3, 2.9, 6.1, 5.4, 9.8, 4.0, 7.2, 3.5, 8.8, 6.6, 5.1, 1.0, 7.9, 9.3, 4.7, 6.2, 8.0, 5.5, 3.3, 7.5, 9.1, 4.4, 6.9, 8.7, 2.2, 10.0};
     bubbleSortOptimizadoFloat(notas, 50);
     printf("TOP 3 NOTAS:\n1- %.1f\n2- %.1f\n3- %.1f\n ", notas[49], notas[48], notas[47]);
     float media = calcula_media(notas, 50);
     printf("Media: %.2f\n", media);
 
-    //QUEST√O 4
+    //QUEST√ÉO 4
     int D[] = {};// n = 0
     int E[] = {1};// n = 1
     int F[] = {5,21,5,53,21,4,1,21}; // Repetidos
@@ -203,6 +203,7 @@ void bubble_sort(){
     printf("\nDEPOIS: ");
     bubbleSortOrdem(G, 8, -1);
     imprimirVetor(G, 8, 0);
+    printf("\n\n");
 
 }
 
